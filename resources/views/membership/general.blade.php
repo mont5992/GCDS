@@ -1,0 +1,186 @@
+
+
+@extends('layouts.app')
+
+@section('styles')
+<link href="{{ asset('css/join.css') }}" rel="stylesheet">
+@endsection
+
+
+@section('title', 'Classroom | Global Church Divinity School')
+
+@section('content')
+<style>
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    text-align: left; 
+  }
+
+  .col-md-12 {
+    flex: 1 1 100%;
+  }
+
+  .col-md-6 {
+    flex: 1 1 48%;
+  }
+
+  .col-md-4 {
+    flex: 1 1 30%;
+  }
+
+  label {
+    color: #999;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+
+  select {
+    background-color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    .col-md-6,
+    .col-md-4 {
+      flex: 1 1 100%;
+    }
+  }
+  .btn {
+    margin-top: 25px;
+    margin-left: 700px;
+    border-radius: 12px;
+    width: 125px;
+    height: 45px;
+    background-color: #1c4f6f;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+</style>
+<center>
+<div class= "general_container">
+    <div class="general_image">
+        <img src="{{ asset('images/membership-5.jpg') }}" alt="Join 2">
+    </div>
+    <h1>General Membership</h1>
+    <h2><div class="price">$14,920</div><small style="color:#777"> ($415/month) </small>OVER 3 YEARS </h2>
+    <br>
+    <ul>
+        <li>Enroll opportunity for the President or Superintendent of Organization/Denomination to select as many leaders they choose anywhere in</li>
+        <li>the world to become a part of their campus.</li>
+       <li>Unlimited number of students permitted to attend</li>
+        <li>20% Discount of Training Summits</li>
+        <li>20% off Global Church Network Resources</li>
+        <li>Access to the Global Church Library.</li>
+    </ul>
+</div>
+<br>
+<div>
+</div>
+</center>
+<center>
+  <div class="registrationform">
+  <h2>Registration</h2>
+  <h3>Create Your Account</h3>
+</div>
+   <p style="margin-left:-369px;padding:5px; color: #999;">Choose a name for your Campus that reflect a Global Nature.</p>
+   <small style="margin-left:-33px; color: #999;">(For example: Grace Divinity School, World Healing Divinity School, International Divinity School, Great Commission Divinity School)</small>
+   <br>
+   <br>
+<form action ="/register_growth_membership" method="POST">
+  <div class="col-md-6">
+    <label style="color:#999">First Name</label><br>
+    <input type="text" class="text" required name="first_name" value="">
+  </div>
+
+  <div class="col-md-6">
+    <label style="color:#999">Last Name</label><br>
+    <input type="text" class="text" required name="last_name" value="">
+  </div>
+
+  <div class="col-md-12">
+    <label style="color:#999">Email</label><br>
+    <input type="email" class="text" required name="email" value="">
+  </div>
+
+  <div class="col-md-12">
+    <label style="color:#999">Address</label><br>
+    <input type="text" class="text" required name="address" value="">
+  </div>
+
+  <div class="col-md-4">
+    <label style="color:#999">State / Province / Region</label><br>
+    <input type="text" class="text" required name="state" value="">
+  </div>
+
+  <div class="col-md-4">
+    <label style="color:#999">City</label><br>
+    <input type="text" class="text" required name="city" value="">
+  </div>
+
+  <div class="col-md-4">
+    <label style="color:#999">Country</label><br>
+    <select name="country" required>
+      <option value="">Select</option>
+      <option>USA</option>
+      <option>Canada</option>
+      <option>UK</option>
+      <option>Other</option>
+    </select>
+  </div>
+
+  <div class="col-md-6">
+    <label style="color:#999">Primary Language</label><br>
+    <select name="primary_language" required>
+      <option value="">Select</option>
+      <option>English</option>
+      <option>Spanish</option>
+      <option>French</option>
+      <option>Other</option>
+    </select>
+  </div>
+
+  <div class="col-md-6">
+    <label style="color:#999">What Form of Ministry Do You Have?</label><br>
+    <select name="ministry_form" required>
+      <option value="">Select</option>
+      <option>Pastoral</option>
+      <option>Teaching</option>
+      <option>Missionary</option>
+      <option>Other</option>
+    </select>
+  </div>
+
+  <div class="col-md-6">
+    <label style="color:#999">Password</label><br>
+    <input type="password" class="text" required name="password" value="">
+  </div>
+
+  <div class="col-md-6">
+    <label style="color:#999">Confirm Password</label><br>
+    <input type="password" class="text" required name="confirm_password" value="">
+  </div>
+</form>
+</center>
+<button type="button" class="btn btn-dark">Continue</button>
+<br>
+<br>
+@endsection

@@ -1,0 +1,514 @@
+
+.notice {position: absolute; top: 0; background: #FFF; padding: 10px; font-size: 13px; font-weight: 700; border: 2px solid #0c324f; border-radius: 15px; left: -2px; top: -30px;
+	box-shadow:         3px 3px 13px 0px rgba(50, 50, 50, 0.41);
+}
+
+#memberships {padding-bottom: 45px;}
+
+a {text-decoration: none !important;}
+
+a.button:hover {color: #FFF !important}
+
+#memberships h1 {text-align: center; padding: 0; margin: 0; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; font-size: 26px;}
+
+p.intro {text-align: center; font-size: 24px; font-weight: 300; line-height: 35px; padding: 30px 0;}
+p.intro strong {font-weight: 500}
+
+#memberships .level {padding: 30px 15px; color: #FFF; text-align: center; font-family: 'Open Sans', sans-serif; height:710px;
+	-webkit-box-shadow: 3px 3px 13px 0px rgba(50, 50, 50, 0.41);
+	-moz-box-shadow:    3px 3px 13px 0px rgba(50, 50, 50, 0.41);
+	box-shadow:         3px 3px 13px 0px rgba(50, 50, 50, 0.41);
+}
+#memberships .level h3 {font-weight: 700 !important; text-transform: uppercase; letter-spacing: 1px; border-bottom: 4px solid #FFF; padding-bottom: 15px;}
+#memberships .level img {display: block; margin:15px auto; max-width: 100px; max-height: 100px;}
+#memberships .level ul {padding:10px 0 0; margin: 0; text-align: left;}
+#memberships .level ul li {margin: 0 0 14px 15px; padding: 0; font-size: 14px; line-height: 20px;}
+#memberships .level ul li i {font-size: 18px; font-weight: 800}
+
+.growth {background: #83843d;}
+.gold {background: #cba83e;}
+.grand {background: #b23542;}
+.global {background: #294f6b;}
+.general {background: #4e1f39;}
+
+
+#memberships .option {padding: 10px 15px; color: #FFF; text-align: center; font-family: 'Open Sans', sans-serif; margin-top: 15px; font-weight: 700; letter-spacing: 1px; height: auto; position: relative; cursor: pointer;
+	-webkit-box-shadow: 3px 3px 13px 0px rgba(50, 50, 50, 0.41);
+	-moz-box-shadow:    3px 3px 13px 0px rgba(50, 50, 50, 0.41);
+	box-shadow:         3px 3px 13px 0px rgba(50, 50, 50, 0.41);
+}
+#memberships .option.growth {padding: 127px 0}
+#memberships .option .price {font-size: 22px;}
+#memberships .option.gold {padding: 30px 15px;}
+#memberships .option.grand {padding: 137px 0}
+#memberships .option.global {padding: 137px 0}
+#memberships .option.general {padding: 59px 0}
+#memberships .option:hover i {color: #294f6b}
+#memberships .option i {background: #FFF; color: #FFF; border-radius: 100px; width: 40px; height: 40px; font-size: 20px; line-height: 39px; position: absolute; left: -15px; top:-15px; border: 3px solid #CCC;
+	transition: all .1s linear; 
+	-webkit-transition: all .1s linear; 
+	-moz-transition: all .1s linear;
+}
+
+.featured img {width: 350px; height: 200px; object-fit: cover}
+.featured {text-align: center;}
+.featured .button {background: #c0222e}
+
+
+#selected-plan {text-align: center; background: #EEE;}
+#selected-plan .icon img {width: 100%; height: 100%;}
+#selected-plan .icon {width: 120px; height: 120px; border-radius: 100px; margin: 0 auto; overflow: hidden; padding: 20px;}
+#selected-plan h1 {font-size: 32px; padding: 15px 0;}
+#selected-plan h2 {font-size: 24px; font-weight: 500}
+#selected-plan h2 div {display: inline; font-weight: 700;}
+#selected-plan ul {padding-top: 20px;}
+#selected-plan ul li {list-style: none; font-size: 20px;}
+
+#selected-plan .plan-growth {}
+#selected-plan .plan-growth .growth-icon {background: #84853d;}
+#selected-plan .plan-growth h1,
+#selected-plan .plan-growth h2 {color: #84853d}
+
+#selected-plan .plan-gold {}
+#selected-plan .plan-gold .gold-icon {background: #cca93f;}
+#selected-plan .plan-gold h1,
+#selected-plan .plan-gold h2 {color: #cca93f}
+
+#selected-plan .aglogo {max-width: 300px; margin-bottom:80px;}
+#selected-plan .plan-grand {}
+#selected-plan .plan-grand .grand-icon {background: #b23542;}
+#selected-plan .plan-grand h1,
+#selected-plan .plan-grand h2 {color: #b23542}
+
+#selected-plan .plan-global {}
+#selected-plan .plan-global .global-icon {background: #294f6b;}
+#selected-plan .plan-global h1,
+#selected-plan .plan-global h2 {color: #294f6b}
+
+
+#selected-plan .plan-general {}
+#selected-plan .plan-general .general-icon {background: #4e1f3a;}
+#selected-plan .plan-general h1,
+#selected-plan .plan-general h2 {color: #4e1f3a}
+
+
+
+#registration h2 {text-align: center; font-weight: 700; text-transform: uppercase; padding-top: 30px; padding-bottom: 0;}
+#registration h3 {text-align: center; font-weight: 700; text-transform: uppercase; padding-top: 0; padding-bottom: 30px; font-size: 18px; color: #999}
+#registration form {max-width: 800px; margin: 0 auto;}
+#registration input[type="text"],
+#registration input[type="email"],
+#payment input[type="number"],
+#registration input[type="password"] {width: 100%; padding-left: 15px; padding-right: 15px; -webkit-appearance: none;}
+#registration select {margin-bottom: 20px;}
+#registration label {font-weight: 700; color: #999; text-transform: uppercase; width: 100%;}
+#registration form p {font-family: 'Open Sans', sans-serif; font-size: 16px; margin-bottom: 10px; color: #666}
+#registration form button {margin-top: 30px;}
+#registration select {border: 2px solid #CCC; height: 38px; width: 100%; border-radius: 5px;}
+
+#promo-link {font-size: 20px; font-weight: 700; color: #b23542;}
+#promo-code {padding-top: 30px;}
+#promo-code input {width: 300px !important}
+
+#payment h2 {text-align: center; font-weight: 700; text-transform: uppercase; padding-top: 30px; padding-bottom: 0;}
+#payment h3 {text-align: center; font-weight: 700; text-transform: uppercase; padding-top: 0; padding-bottom: 30px; font-size: 18px; color: #999}
+#payment form {max-width: 800px; margin: 0 auto;}
+#payment input[type="text"],
+#payment input[type="number"],
+#payment input[type="password"] {width: 100%; padding-left: 15px; padding-right: 15px;}
+#payment label {font-weight: 700; color: #999; text-transform: uppercase;}
+#payment form button {margin-top: 30px;}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+
+
+
+
+
+
+/*5 column boostrap grid*/
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+.container {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.col {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.featured {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aglogo {
+  width: 250px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.button.red {
+  background-color: #c42026;
+  color: white;
+}
+
+.button.red:hover {
+  background-color: #a3181d;
+}
+
+.button.blue {
+  background-color: #174d6e;
+  color: white;
+  margin: 10px;
+}
+
+.button.blue:hover {
+  background-color: #10354d;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.growth_container {
+ background-color: #ededed;
+ padding:90px
+}
+
+.growth_container img{
+  margin-bottom: 25px;
+}
+.growth_container h1{
+  color: #84853d;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+}
+.growth_image img {
+  width: 100px; 
+  height: 100px; 
+  border-radius: 100px; 
+  margin: 0 auto; 
+  overflow: hidden; 
+  padding: 17px;
+  background:#84853d;
+} 
+
+.growth_container h2{ 
+  color: #84853d;
+  font-family: 'Open Sans', sans-serif;
+  font-size:25px;
+  font-weight:500;
+  padding:10px
+
+}
+.growth_container h2 div {
+  display: inline; 
+  font-weight: 700;
+}
+.growth_container h2 small {
+  font-size: 15px;
+  color: #84853d;
+}
+
+.growth_container ul {
+  list-style-type: none;
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+
+.gold_container {
+ background-color: #ededed;
+ padding:90px
+}
+
+.gold_container img{
+  margin-bottom: 25px;
+}
+.gold_container h1{
+  color: #cca93f;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+}
+.gold_image img {
+  width: 100px; 
+  height: 100px; 
+  border-radius: 100px; 
+  margin: 0 auto; 
+  overflow: hidden; 
+  padding: 17px;
+  background:#cca93f;
+} 
+
+.gold_container h2{ 
+  color: #cca93f;
+  font-family: 'Open Sans', sans-serif;
+  font-size:25px;
+  font-weight:500;
+  padding:10px
+
+}
+.gold_container h2 div {
+  display: inline; 
+  font-weight: 700;
+}
+.gold_container h2 small {
+  font-size: 15px;
+  color: #cca93f;
+}
+
+.gold_container ul {
+  list-style-type: none;
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+.grand_container {
+ background-color: #ededed;
+ padding:90px
+}
+
+.grand_container img{
+  margin-bottom: 25px;
+}
+.grand_container h1{
+  color: #b23542;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+}
+.grand_image img {
+  width: 100px; 
+  height: 100px; 
+  border-radius: 100px; 
+  margin: 0 auto; 
+  overflow: hidden; 
+  padding: 17px;
+  background:#b23542;
+} 
+
+.grand_container h2{ 
+  color: #b23542;
+  font-family: 'Open Sans', sans-serif;
+  font-size:25px;
+  font-weight:500;
+  padding:10px
+
+}
+.grand_container h2 div {
+  display: inline; 
+  font-weight: 700;
+}
+.grand_container h2 small {
+  font-size: 15px;
+  color: #b23542;
+}
+
+.grand_container ul {
+  list-style-type: none;
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+.global_container {
+ background-color: #ededed;
+ padding:90px
+}
+
+.global_container img{
+  margin-bottom: 25px;
+}
+.global_container h1{
+  color: #294f6b;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+}
+.global_image img {
+  width: 100px; 
+  height: 100px; 
+  border-radius: 100px; 
+  margin: 0 auto; 
+  overflow: hidden; 
+  padding: 17px;
+  background:#294f6b;
+} 
+
+.global_container h2{ 
+  color: #294f6b;
+  font-family: 'Open Sans', sans-serif;
+  font-size:25px;
+  font-weight:500;
+  padding:10px
+
+}
+.global_container h2 div {
+  display: inline; 
+  font-weight: 700;
+}
+.global_container h2 small {
+  font-size: 15px;
+  color: #294f6b;
+}
+
+.global_container ul {
+  list-style-type: none;
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+
+.general_container {
+ background-color: #ededed;
+ padding:90px
+}
+
+.general_container img{
+  margin-bottom: 25px;
+}
+.general_container h1{
+  color: #4e1f3a;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+}
+.general_image img {
+  width: 100px; 
+  height: 100px; 
+  border-radius: 100px; 
+  margin: 0 auto; 
+  overflow: hidden; 
+  padding: 17px;
+  background:#4e1f3a;
+} 
+
+.general_container h2{ 
+  color: #4e1f3a;
+  font-family: 'Open Sans', sans-serif;
+  font-size:25px;
+  font-weight:500;
+  padding:10px
+
+}
+.general_container h2 div {
+  display: inline; 
+  font-weight: 700;
+}
+.general_container h2 small {
+  font-size: 15px;
+  color: #4e1f3a;
+}
+
+.general_container ul {
+  list-style-type: none;
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+
+
+.assemblie_head {
+    display: flex;
+    flex-direction: column;       
+    align-items: center;         
+    background-color: #EEE;
+    padding: 20px 0;              
+}
+
+.assemblie_head img {
+    width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.assemblie_head h2 {
+    margin: 0;       
+    color:#b23542;       
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px; 
+    font-weight: 500;
+}
+.ag-certified{
+  background-color:#103e58;
+  border-radius:10px;
+}
+
+.ag-certified img {
+  color: white;
+  align-items: center;
+}
+
+.registrationform h2{
+  padding:5px;
+  color: #1c4f6f;
+  text-transform: uppercase;
+}
+.registrationform h3{
+  color: #999;
+  text-transform: uppercase;
+}
+
+.registrationform{
+  padding:0px;
+}
