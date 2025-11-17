@@ -155,3 +155,445 @@ footer a {
   }
   
 }
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#hero{
+background-image: url('/images/home_hero_bg.jpg');
+background-size: cover;
+}
+
+.container{
+    padding: 60px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.home #hero h1 {
+    font-size: 50px;
+    line-height: 65px;
+    letter-spacing: 2px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#hero h1 {
+    font-size: 34px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    line-height: 50px;
+    text-shadow: 1px 1px 9px rgba(0, 0, 0, 1);
+}
+
+.home #hero h3 {
+    padding-top: 30px;
+}
+
+#hero h3 {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-style: italic;
+    text-shadow: 1px 1px 9px rgba(0, 0, 0, 1);
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 100;
+    padding: 60px 10% 0;
+}
+
+.content{
+    padding: 40px 0;
+}
+
+.wrapper {
+    width: 890px;
+    margin: 0 auto;
+}
+
+.content h1 {
+    font-size: 34px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #1c4f6f;
+    margin-bottom: 30px;
+}
+
+img.fullwidth {
+    width: 100%;
+    display: block;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.content h2 {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: #1c4f6f;
+    margin-bottom: 10px;
+}
+
+.home .content p {
+    width: 100%;
+    margin-bottom: 60px;
+}
+.content p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+p {
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+
+.lightbox {
+   
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto 50px;
+    text-align: center;
+    display: block;
+    width: auto;
+}
+
+a {
+    text-decoration: none !important;
+    color: #1C4F6F;
+}
+
+a.more
+ {
+    background: url('/images/forward_arrow.jpg') no-repeat center left;
+    padding: 0 0 0 30px;
+    display: block;
+    line-height: 40px;
+    font-size: 18px;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #1C4F6F;
+}
+
+.right {
+    float: right;
+}
+
+.campus-ad .wrapper {
+    text-align: center;
+    border-bottom: 1px solid #DDD;
+    padding-bottom: 60px;
+    
+}
+
+.campus-ad p {
+    margin-bottom: 30px !important;
+    padding-bottom: 0;
+}
+.content p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 30px;
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+
+a.button {
+    display: inline-block;
+    line-height: 40px;
+    background: #1C4F6F;
+    color: #FFF;
+    padding: 0 30px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.testimonials .wrapper {
+    position: relative;
+}
+
+.testimonial {
+    width: 50%;
+    float: left;
+    padding: 0 7% 0 0;
+    line-height: 24px;
+    margin-bottom: 40px;
+}
+
+.testimonial p {
+    margin-bottom: 0px !important;
+    line-height: 22px;
+}
+
+.content p {
+    font-size: 18px;
+}
+
+.testimonial_slider
+{
+    width: auto;
+    position: relative;
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+
+.testimonial .author {
+    padding: 10px 0 0;
+}
+
+.testimonial .author img {
+    float: left;
+    margin: 0 15px 0 0;
+}
+
+.testimonial .author .upper {
+    font-size: 14px;
+    color: #1c4f6f;
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px 0 0;
+    line-height: 18px;
+}
+
+.testimonial .author .lower {
+    font-size: 13px;
+    color: #1c4f6f;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    line-height: 18px;
+}
+
+
+.sign_up {
+    text-align: center;
+}
+
+.home .content p {
+    width: 100%;
+    margin-bottom: 60px;
+}
+.sign_up p {
+    text-align: center;
+    width: 100% !important;
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: #2a0400;
+    line-height: 32px;
+}
+
+
+.content.login {
+  min-height: 100vh; /* full viewport height */
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center; /* vertical center */
+  background-color: #f8f9fa; /* optional light background */
+}
+
+.wrapper-2 {
+  width: 100%;
+  max-width: 400px; /* limit width */
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.login_form h2 {
+  text-align: center;
+  color: #154360;
+  margin-bottom: 20px;
+}
+
+.textFields label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+  color: #333;
+}
+
+.textFields input.text {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  background-color: #154360;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  background-color: #0d2e45;
+}
+
+.forgot_pass {
+  display: block;
+  text-align: right;
+  font-size: 13px;
+  color: #154360;
+  text-decoration: none;
+  margin-top: 5px;
+}
+.forgot_pass:hover {
+  text-decoration: underline;
+}
+
+.page--contact {
+    border-top: 2px solid #CCC;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
+.content li {
+    font-size: 18px;
+    line-height: 28px;
+    list-style: disc;
+    margin-left: 10px;
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+
+.content ul, .content ol {
+    margin-bottom: 30px;
+}
+
+.page--faq {
+    border-top: 2px solid #CCC;
+}
+
+.page--faq h3 {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ca9c2c;
+    padding: 20px 0 0;
+}
+
+strong{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
+
+.page--contact label{
+     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
+
+.page--contact textarea {
+    width: 500px;
+    height: 100px;
+    border: 2px solid #CCC;
+    padding: 5px 5%;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.page--contact input[type="text"], .page--contact input#email, .page--contact input#phone {
+    border: 2px solid #CCC;
+    padding: 5px 5%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    border: none;
+    clear: both;
+    line-height: 30px;
+    background: #1C4F6F;
+    color: #FFF;
+    padding: 0 30px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+span{
+    font-weight: bold;
+}
+
+.curriculum {
+    max-width: 938px;
+    width: auto;
+    position: relative;
+}
+
+.curriculum img {
+    max-width: 100%;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.curriculum .hover.preaching {top: 25%}
+.curriculum .hover.teaching {top: 36%; background: #c16f47;}
+.curriculum .hover.healing {top: 47%; background: #ccae54;}
+.curriculum .hover.story {top: 55.5%; background: #8a8b49;}
+.curriculum .hover.arts {top: 67%; background: #2a4f6a;}
+.curriculum .hover.formation {top: 77%; background: #0071a3;}
+.curriculum .hover.semiotics {top: 86.6%; background: #834861;}
+.curriculum .hover:hover {opacity: 1;}
+
+
+.curriculum .hover {
+    position: absolute;
+    background: #aa3f46;
+    width: 21.5%;
+    right: 13.5%;
+    padding: 0;
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: center;
+    opacity: 0;
+    cursor: pointer;
+    letter-spacing: -0.4px;
+    transition: all .2s 
+ease;
+}
+
+.blue_bg {
+    background: #d6dede;
+}
+
+.page--forgot h1, p{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.page--forgot input{
+    text-align: center;
+}
