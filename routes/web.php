@@ -23,7 +23,7 @@ Route::prefix('membership')->name('membership.')->group(function () {
     Route::get('/general', [MembershipController::class, 'showgeneral'])->name('general');
     Route::get('/assemblie', [MembershipController::class, 'assembliesgod'])->name('assemblie');
 });
-Route::get('/', function () {
+Route::get('/login', function () {
     return view('login');
       
 });
@@ -40,3 +40,7 @@ Route::get('/about', function(){
 });
 Route::get('/forgot_pass', [ForgotPasswordController::class, 'index'])->name('forgot_pass');
 Route::post('/forgot_pass', [ForgotPasswordController::class, 'submit'])->name('forgot_pass.submit');
+
+Route::get('/test-ci', function () {
+    return "CI/CD working!";
+});
