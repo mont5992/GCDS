@@ -12,6 +12,9 @@ use App\Http\Controllers\ClassroomController;
 use App\Http\Controllers\credentialsController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ForgotPasswordController;
+use App\Http\Controllers\AdminController;
+use App\Http\Middleware\AdminAuth;
+
 
 
 //Route::get('/classroom', [ClassroomController::class, 'index'])->name('classroom');
@@ -41,7 +44,12 @@ Route::get('/about', [AboutController::class, 'index'])->name('about');
 
 Route::get('/forgot_pass', [ForgotPasswordController::class, 'index'])->name('forgot_pass');
 Route::post('/forgot_pass', [ForgotPasswordController::class, 'submit'])->name('forgot_pass.submit');
+Route::post('/adminlogin',[AdminController::class, 'index'])->name('admin.login');
 
 Route::get('/globalchurch', [GlobalController::class, 'index'])->name('globalchurch');
 Route::get('/globalhub', [GlobalController::class, 'hub'])->name('globalhub');
 Route::get('/globallife', [GlobalController::class, 'globallife'])->name('globallife');
+Route::middleware([AdminAuth::class])->prefix('admin')->group(function () {
+    Route::get('dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
+    Route::get('/userdata', [AdminController::class, 'userdata'])->name('userdata');  
+});

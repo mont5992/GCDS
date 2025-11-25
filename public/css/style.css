@@ -413,6 +413,7 @@ ul {
   text-align: center;
   color: #154360;
   margin-bottom: 20px;
+  font-weight: bolder;
 }
 
 .textFields label {
@@ -450,9 +451,10 @@ button[type="submit"]:hover {
   display: block;
   text-align: right;
   font-size: 13px;
-  color: #154360;
+  color:black;
   text-decoration: none;
   margin-top: 5px;
+  font-weight: bolder;
 }
 .forgot_pass:hover {
   text-decoration: underline;
@@ -589,6 +591,7 @@ ease;
 }
 
 .page--forgot h1, p{
+    /* text-align: center; */
     margin-top: 20px;
     margin-bottom: 20px;
 }

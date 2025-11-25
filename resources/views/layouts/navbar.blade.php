@@ -1,3 +1,5 @@
+
+
 <nav>
   <div class="logo">
     <a href="#"><img src="{{ asset('images/logo.png') }}" alt="Global Church Divinity School"></a>
@@ -11,4 +13,15 @@
     <li><a href="{{ url('/membership') }}">SIGN UP</a></li>
   </ul>
 </nav>
+
+<div id="google_translate_element"></div>
+<script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {pageLanguage: 'en'},
+            'google_translate_element'
+        );
+    }
+</script>
+<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 

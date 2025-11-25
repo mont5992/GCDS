@@ -37,7 +37,7 @@
 
             <ul>
               <li><i>Equip</i> One Leader</li>
-              <li><strong>Choose from one to seven credentials.</strong> (Each credential track includes the related courses.)</li>
+              <li><strong style="color:white">Choose from one to seven credentials.</strong> (Each credential track includes the related courses.)</li>
               <li>Access to the Global Church Library.</li>
             </ul>
           </div>
@@ -79,9 +79,9 @@
 
             <ul>
               <li><i>Enlist</i> one church</li>
-              <li><strong>Choose name of you campus</strong> (i.e. First Baptist Campus, Faith Assembly Campus, etc.)</li>
-              <li><strong>Unlimited number of students permitted to attend.</strong></li>
-              <li><strong>10% off Global Church Network Resources</strong></li>
+              <li><strong style="color:white">Choose name of you campus</strong> (i.e. First Baptist Campus, Faith Assembly Campus, etc.)</li>
+              <li><strong style="color:white">Unlimited number of students permitted to attend.</strong></li>
+              <li><strong style="color:white">10% off Global Church Network Resources</strong></li>
               <li>Access to the Global Church Library.</li>
             </ul>
           </div>
@@ -114,10 +114,10 @@
 
             <ul>
               <li><i>Encourage</i> up to 10 regional churches to join your local church in one campus.</li>
-              <li><strong>Choose name of your campus</strong> (i.e. Zurich Campus, Los Angeles Campus, etc.)</li>
-              <li><strong>Unlimited number of students permitted to attend.</strong></li>
-              <li><strong>10% Discount of Training Summits</strong></li>
-              <li><strong>10% off Global Church Network Resources</strong></li>
+              <li><strong style="color:white">Choose name of your campus</strong> (i.e. Zurich Campus, Los Angeles Campus, etc.)</li>
+              <li><strong style="color:white">Unlimited number of students permitted to attend.</strong></li>
+              <li><strong style="color:white">10% Discount of Training Summits</strong></li>
+              <li><strong style="color:white">10% off Global Church Network Resources</strong></li>
               <li>Access to the Global Church Library.</li>
             </ul>
           </div>
@@ -141,10 +141,10 @@
 
             <ul>
               <li><i>Expand</i> the opportunity for the pastor to select up to 50 local churches anywhere in the world to become a part of his/her campus.</li>
-              <li><strong>Choose name of your campus</strong> (i.e. Grace Campus, Faith Campus, etc.)</li>
-              <li><strong>Unlimited number of students permitted to attend.</strong></li>
-              <li><strong>15% Discount off Training Summits</strong></li>
-              <li><strong>15% off Global Church Network Resources</strong></li>
+              <li><strong style="color:white">Choose name of your campus</strong> (i.e. Grace Campus, Faith Campus, etc.)</li>
+              <li><strong style="color:white">Unlimited number of students permitted to attend.</strong></li>
+              <li><strong style="color:white">15% Discount off Training Summits</strong></li>
+              <li><strong style="color:white">15% off Global Church Network Resources</strong></li>
               <li>Access to the Global Church Library.</li>
             </ul>
           </div>
@@ -176,10 +176,10 @@
 
             <ul>
               <li><i>Enroll</i> opportunity for the President or Superintendent of Organization/Denomination to select as many leaders they choose anywhere in the world to become a part of their campus.</li>
-              <li><strong>Choose name of your campus</strong> (i.e. Grace Campus, Faith Campus, etc.)</li>
-              <li><strong>Unlimited number of students permitted to attend.</strong></li>
-              <li><strong>20% Discount off Training Summits</strong></li>
-              <li><strong>20% off Global Church Network Resources</strong></li>
+              <li><strong style="color:white">Choose name of your campus</strong> (i.e. Grace Campus, Faith Campus, etc.)</li>
+              <li><strong style="color:white">Unlimited number of students permitted to attend.</strong></li>
+              <li><strong style="color:white">20% Discount off Training Summits</strong></li>
+              <li><strong style="color:white">20% off Global Church Network Resources</strong></li>
               <li>Access to the Global Church Library.</li>
             </ul>
           </div>
@@ -240,18 +240,18 @@
 
 <br>
 
-<div class="content blue_bg" style ="background-color: #d6dede;">
+<div class="content blue_bg">
   <div class="container">
-    <h1 class="h2" style="color:#1c4f6f">Apply for a GCDS Scholarship</h2>
+    <h1 class="h2" style="color:#1c4f6f;margin-bottom:-15px">Apply for a GCDS Scholarship</h2>
     <br>
-      <p>FREE approved membership to all core courses, electives, and library resources.</p>
+      <p style="color:black;margin-bottom:-5px;">FREE approved membership to all core courses, electives, and library resources.</p>
       <br>
-      <a href="#demo" class="button center"style="background-color: #174d6e;color: white; margin-left: 0px;">Apply for a GCN Scholarship</a>
+      <a href="#demo" class="button center"style="background-color: #174d6e;color: white; margin-left: 0px;margin-bottom:-15px;">Apply for a GCN Scholarship</a>
       <br>
       <br>
-      <p>Global Church Divinity School Scholarships are ONLY made available for leaders who primarily live in developing countries. Each month scholarships are approved and leaders are notified. These countries include:</p>
+      <p style ="color:black">Global Church Divinity School Scholarships are ONLY made available for leaders who primarily live in developing countries. Each month scholarships are approved and leaders are notified. These countries include:</p>
       <br>
-      <ul id="countries" style="columns: 5;font-family:'Times New Roman', serif;list-style-type: none; padding-left: 0;">
+      <ul id="countries" style="columns: 5;font-family:'Times New Roman', serif; list-style-type:none; padding-left: 0;color:black;">
         <li style="margin-bottom: 15px;">Afghanistan</li>
         <li style="margin-bottom: 15px;">Albania</li>
         <li style="margin-bottom: 15px;">Algeria</li>

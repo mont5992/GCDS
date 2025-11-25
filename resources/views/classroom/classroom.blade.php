@@ -202,7 +202,7 @@
                 <p>The Global Church Divinity School consists of the greatest teachers and authors in the Global Church today. When you choose to become a paid member, this permits the Global Church Network to scholarship five more pastors/leaders in specific nations. Tens of thousands have been scholarshipped due to the faithful paid memberships. This dynamic content in the GCDS has been designed to enhance Leadership Development, Global Missions, Church Multiplication, Evangelism/Discipleship and Visionary Networking.</p>    </div>
              </div>
                 
-                <div class="campus" style="background-color: white;">
+                <div class="campus" style="background-color: white;padding:0px;">
                  <div class="wrapper content">    
                 <p>The GCDS approaching the learning process from a pragmatic viewpoint. Rather than teaching everything that there is to know on a particular topic, each global teacher has presented the very essence of the topic’s most important concepts. He/she has provided wisdom, knowledge and application from life experiences and from personal study intended to provide dynamic outcomes for pastors everywhere.</p>        <div class="clear"></div>
                 <h2 style="font-size:24px; font-family:'Open Sans', sans-serif; font-weight:500; color:#1c4f6f;">360-Degree Teaching </h2>
@@ -212,7 +212,7 @@
               
 
         <div class="campus" style="background-color: white; padding: 30px;">
-        <div class="wrapper content" style="max-width: 910px; margin: 0 auto; font-family: 'Open Sans', sans-serif;">
+        <div class="wrapper content" style="max-width: 910px; margin: 0 auto; font-family: 'Open Sans', sans-serif;margin-top:-68px">
     
     <h2 style="font-size: 24px; font-weight: 500; margin-bottom: 10px; color: #1c4f6f;">
       Learn from the Brightest Minds Today
@@ -376,7 +376,7 @@
 
 <div class="content tan_bg sign_up" style="text-align:center;background:#e8e2d3;padding:40px 0;">
   <div class="wrapper">
-    <p>Each Global Church Divinity School  <br />Membership Exceeds $40,000 In Value!</p>
+    <p>Each Global Church Divinity School <br />Membership Exceeds $40,000 In Value!</p>
    <div class="preview_container">
         <a class="mod preview" href="#leondard">
         <span class="button">SIGN UP</span>

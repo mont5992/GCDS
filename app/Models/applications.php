@@ -9,7 +9,7 @@ class applications extends Model
     protected $table = 'applications';
 
     protected $fillable = [
-'uid',
+  'uid',
   'first_name',
   'last_name',
   'email',
