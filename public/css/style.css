@@ -116,10 +116,10 @@ nav {
 
 /* Footer */
 footer {
-  background-color: #0f3c49;
+  background-color: #1c4f6f;
   color: #ddd;
   text-align: center;
-  padding: 25px 20px;
+  padding: 20px 0px;
   font-size: 0.95rem;
 }
 
@@ -589,7 +589,6 @@ ease;
 }
 
 .page--forgot h1, p{
-    text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -597,3 +596,35 @@ ease;
 .page--forgot input{
     text-align: center;
 }
+
+.content .privacy li
+{
+  margin-left: 40px;
+}
+
+footer .wrapper{
+  display: flex;
+  gap: 40px;
+}
+
+footer ul{
+  display: flex;
+  gap: 20px;
+}
+
+footer ul li a {
+    display: block;
+    line-height: 57px;
+    color: #FFF;
+    padding: 0 10px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#selected-plan {
+    text-align: center;
+    background: #EEE;
+}
+

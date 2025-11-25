@@ -228,9 +228,9 @@
     </div>
 
     <div class="button-group">
-      <a href="#" class="button blue">Global Church Evangelists</a>
-      <a href="#" class="button blue">Global Hubs of Christianity</a>
-      <a href="#" class="button blue">Global Life University</a>
+      <a href="/globalchurch" class="button blue">Global Church Evangelists</a>
+      <a href="/globalhub" class="button blue">Global Hubs of Christianity</a>
+      <a href="/globallife" class="button blue">Global Life University</a>
     </div>
   </div>
 </div>

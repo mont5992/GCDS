@@ -18,8 +18,18 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Global Church Divinity School. All rights reserved.</p>
-    <p>Part of the <a href="http://www.gcnw.tv" target="_blank">Global Church Network</a></p>
+    <div class="wrapper">
+
+  <a class="logo" href="https://gcds.tv/"><img src="{{ url('/images/footer-logo.png') }}" alt=""></a>
+
+    <ul>
+    <li><a href="{{ url('/about') }}">ABOUT</a></li>
+    <li><a href="{{ url('/faq') }}">FAQ</a></li>
+    <li><a href="{{url('/')}}">RESOURCES</a></li>
+    <li><a href="{{url('/membership')}}">MEMBERSHIP</a></li>
+    <li><a href="{{ url('/contact') }}">CONTACT US</a></li>
+    <li><a href="{{ url('/privacy-policy') }}">PRIVACY POLICY</a></li>
+  </ul>
   </footer>
 
 </body>

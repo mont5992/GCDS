@@ -12,9 +12,9 @@ class ClassroomController extends Controller
         return view('classroom.classroom');
     }
     
-    public function campus()
-    {
-        return view('welcome');
-    }
+    // public function campus()
+    // {
+    //     return view('welcome');
+    // }
     
 }

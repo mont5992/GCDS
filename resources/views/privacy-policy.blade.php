@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Privacy Policy</title>
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-</head>
+@extends('layouts.app')
+
+@section('styles')
+<link href="{{ asset('css/style.css') }}" rel="stylesheet">
+@endsection
+@section('title', 'Privacy-Policy | Global Church Divinity School')
+@section('content')
 <body>
     <div class="page page--contact">
   <div class="wrapper">
@@ -26,7 +24,7 @@
         </p>
 
         <p><b>Data Collection and Use</b></p>
-        <ol>
+        <ol class="privacy">
           <li>
             <b>Personal Information:</b>
             We may collect personal information such as name, email address, phone number, and any other
@@ -83,4 +81,4 @@
   </div>
 </div>
 </body>
-</html>
+@endsection

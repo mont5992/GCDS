@@ -1,5 +1,11 @@
 <?php
 
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\FaqController;
+use App\Http\Controllers\GlobalController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PrivacyController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MembershipController;
 use App\Http\Controllers\ClassroomController;
@@ -8,7 +14,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ForgotPasswordController;
 
 
-Route::get('/', [ClassroomController::class, 'index'])->name('classroom');
+//Route::get('/classroom', [ClassroomController::class, 'index'])->name('classroom');
 Route::get('/classroom', [ClassroomController::class, 'index'])->name('classroom');
 Route::get('/credentials', [credentialsController::class, 'credentials'])->name('credentials');
 
@@ -23,21 +29,19 @@ Route::prefix('membership')->name('membership.')->group(function () {
     Route::get('/general', [MembershipController::class, 'showgeneral'])->name('general');
     Route::get('/assemblie', [MembershipController::class, 'assembliesgod'])->name('assemblie');
 });
-Route::get('/login', function () {
-    return view('login');
-      
-});
-Route::get('/privacy-policy', function (){
-return view('privacy-policy');
-});
-Route::get('/faq', function(){
-    return view('faq');
-});
+
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/login', [LoginController::class, 'login'])->name('login');
+Route::get('/privacy-policy', [PrivacyController::class, 'privacy'])->name('privacy-policy');
+Route::get('/faq', [FaqController::class, 'faq'])->name('faq');
+
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
-Route::get('/about', function(){
-    return view('About');
-});
+Route::get('/about', [AboutController::class, 'index'])->name('about');
+
 Route::get('/forgot_pass', [ForgotPasswordController::class, 'index'])->name('forgot_pass');
 Route::post('/forgot_pass', [ForgotPasswordController::class, 'submit'])->name('forgot_pass.submit');
 
+Route::get('/globalchurch', [GlobalController::class, 'index'])->name('globalchurch');
+Route::get('/globalhub', [GlobalController::class, 'hub'])->name('globalhub');
+Route::get('/globallife', [GlobalController::class, 'globallife'])->name('globallife');
