@@ -51,5 +51,9 @@ Route::get('/globalhub', [GlobalController::class, 'hub'])->name('globalhub');
 Route::get('/globallife', [GlobalController::class, 'globallife'])->name('globallife');
 Route::middleware([AdminAuth::class])->prefix('admin')->group(function () {
     Route::get('dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
-    Route::get('/userdata', [AdminController::class, 'userdata'])->name('userdata');  
+    Route::get('/userdata', [AdminController::class, 'userdata'])->name('userdata'); 
+    Route::post('/edituserdata',[AdminController::class,'edituserdata'])->name('update.user');
+    Route::get('/export_leader_data', [AdminController::class, 'exportleaders'])->name('export.leaders');
+    Route::get('/export_user_data', [AdminController::class, 'exportuserdata'])->name('export.users');
+
 });

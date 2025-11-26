@@ -54,7 +54,7 @@ $("#updateForm").submit(function (e) {
     e.preventDefault();
 
     $.ajax({
-        url: updateUserRoute, 
+        url: updateUserRoute,
         type: "POST",
         data: {
             _token: csrfToken,
@@ -66,13 +66,32 @@ $("#updateForm").submit(function (e) {
             country: $("#country").val(),
         },
         success: function (response) {
-            if (response.status) {
-                alert(response.message);
-                $("#editModal").fadeOut();
-                $('#userTable').DataTable().ajax.reload();
-            } else {
-                alert("Update failed!");
+          
+            Swal.fire({
+                icon: 'success',
+                title: 'Updated!',
+                text: response.success,
+                timer: 2000,
+                showConfirmButton: false
+            });
+
+            // Close modal & reload DataTable
+            $("#editModal").fadeOut();
+            $('#userTable').DataTable().ajax.reload();
+        },
+        error: function (xhr, status, error) {
+           
+            let message = "Update failed!";
+            if (xhr.responseJSON && xhr.responseJSON.errors) {
+                // Collect validation errors if any
+                message = Object.values(xhr.responseJSON.errors).flat().join("\n");
             }
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: message
+            });
         }
     });
 });
+
