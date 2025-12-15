@@ -87,13 +87,17 @@
         padding: 12px 26px;
         cursor: pointer;
     }
-
+ div.dataTables_wrapper .dt-buttons {
+        margin-left: 20px; 
+    }
     
 </style>
 </head>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
 <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+
 <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.2/css/buttons.dataTables.min.css">
 <script src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js"></script>
 <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.html5.min.js"></script>
@@ -101,9 +105,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
-<script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+
+
+
+
+
 
 <body>
 
@@ -116,19 +124,28 @@
     <a href="{{ route('export.users') }}" class="btn btn-primary" id="addUserBtn">
     <i class="fa-solid fa-plus"></i> Export All Users
     </a>
+   
+        <select id="schoolFilter" class="form-select" style="width:200px; margin-bottom:15px;">
+            <option value="">All Schools</option>
+            @foreach($schools as $school)
+                <option value="{{ $school }}">{{ $school }}</option>
+            @endforeach
+        </select>
     <a href="{{ route('export.leaders') }}" class="btn btn-primary" id="addUserBtn">
     <i class="fa-solid fa-plus"></i> Export Campus Leaders
     </a>
     </div>
-    <table id="userTable" class="display nowrap" style="width:100%">
+        <table id="userTable" class="display nowrap" style="width:100%">
         <thead>
             <tr>
                 <th>First Name</th>
                 <th>Last name</th>
                 <th>School name</th>
                 <th>User Level</th>
+                <th>Account Level</th>
                 <th>Country</th>
                 <th>Action</th>
+                <th>export students</th>
             </tr>
         </thead>
     </table>
@@ -165,20 +182,7 @@
     </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
-<script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
 
-<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.2/css/buttons.dataTables.min.css">
-<script src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.html5.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.print.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
     var userdataRoute = "{{ route('userdata') }}";
     var updateUserRoute = "{{ route('update.user') }}";

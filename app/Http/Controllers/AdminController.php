@@ -61,36 +61,111 @@ class AdminController extends Controller
     return redirect()->route('admin.dashboard');
 }
 
+public function dashboard() {
 
-    public function dashboard (){
+    $schools = User::whereNotNull('school_name')
+                    ->pluck('school_name')
+                    ->unique()
+                    ->values();
 
-        return view ('admin.dashboard');
-    }
+    return view('admin.dashboard', compact('schools'));
+
+}
     public function userdata(Request $request)
-    {
-    
+{
+
     if ($request->ajax()) {
-        $data = user::select('id','first_name', 'last_name','school_name','user_level','country') ->get();
-        
-          return DataTables::of($data)
-            ->addColumn('action', function ($row) {
+
+        $query = User::select('id','first_name','last_name','school_name','user_level','account_level','country','student_of')
+        ->whereNull('student_of');
+       
+        if ($request->school_name) {
+            $query->where('school_name', $request->school_name);
+        }
+        return DataTables::of($query)
+    ->addColumn('action', function ($row) {
+        return '
+            <button class="editBtn"
+                data-id="'.$row->id.'"
+                data-first="'.$row->first_name.'"
+                data-last="'.$row->last_name.'"
+                data-school="'.$row->school_name.'"
+                data-level="'.$row->user_level.'"
+                data-country="'.$row->country.'"
+                style="padding:6px 10px; background:#1C4F6F; color:white; border:none; border-radius:4px; cursor:pointer;">
+                <i class="fas fa-edit"></i>
+            </button>
+        ';
+    })
+    ->addColumn('export_students', function($row) {
+      
+    if (!empty($row->school_name) && $row->student_of === null) {
     return '
-        <button class="editBtn"
-            data-id="'.$row->id.'"
-            data-first="'.$row->first_name.'"
-            data-last="'.$row->last_name.'"
-            data-school="'.$row->school_name.'"
-            data-level="'.$row->user_level.'"   
-            data-country="'.$row->country.'"
-            style="padding:6px 10px; background:#1C4F6F; color:white; border:none; border-radius:4px; cursor:pointer;">
-            <i class="fas fa-edit"></i>
+        <button onclick="window.location.href=\''.route('export.leaders.students').'?school_name='.$row->school_name.'\'"
+            class="btn btn-success"
+            style="padding:6px 12px; background:#1C4F6F; color:white; border:none; border-radius:4px; cursor:pointer;">
+            Export Students
         </button>
     ';
-        })
-            ->rawColumns(['action'])
-            ->make(true);
+}else {
+        return 'No Students';
     }
+})
+
+
+    ->rawColumns(['action', 'export_students'])
+    ->make(true);
+
     }
+}
+
+public function leaderstudents(Request $request)
+{
+    $school_name = $request->query('school_name');
+
+    $users = User::where('school_name', $school_name)
+                 ->get();
+
+    $list = [
+        "Last Name|First Name|User Level|School Name|Account Level|Email|Phone|Address|City|State/Province|Zip|Country|Promo Used|Organization Code"
+    ];
+
+    foreach ($users as $user) {
+        $list[] =
+            $user->last_name . '|' .
+            $user->first_name . '|' .
+            $user->user_level . '|' .
+            $user->school_name . '|' .
+            $user->account_level . '|' .
+            $user->email . '|' .
+            $user->addr1 . '|' .
+            $user->city . '|' .
+            $user->state . '|' .
+            $user->zip . '|' .
+            $user->country . '|' .
+            $user->promo . '|' .
+            $user->organization_code;
+    }
+
+    $filename = "students_of_" . str_replace(' ', '_', $school_name) . "-" . date('m-d-y') . ".csv";
+
+    $headers = [
+        "Content-Type" => "text/csv; charset=utf-8",
+        "Content-Disposition" => "attachment; filename={$filename}",
+    ];
+
+    $callback = function () use ($list) {
+        $file = fopen('php://output', 'w');
+
+        foreach ($list as $line) {
+            fputcsv($file, explode('|', $line));
+        }
+
+        fclose($file);
+    };
+
+    return response()->stream($callback, 200, $headers);
+}  
 
    public function edituserdata(Request $req)
 {
